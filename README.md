@@ -1,4 +1,4 @@
-# BOWER [![Build Status](https://secure.travis-ci.org/twitter/bower.png)](http://travis-ci.org/twitter/bower)
+# BOWER [![Build Status](https://secure.travis-ci.org/twitter/bower.png?branch=master)](http://travis-ci.org/twitter/bower)
 
 Bower is a package manager for the web. It offers a generic, unopinionated
 solution to the problem of **front-end package management**, while exposing the
@@ -33,7 +33,7 @@ is just enough to get you started.
 Bower offers several ways to install packages:
 
 ```bash
-# Using the dependencies listed in the current directory's component.json
+# Using the dependencies listed in the current directory's bower.json
 bower install
 # Using a local or remote package
 bower install <package>
@@ -84,9 +84,9 @@ installed components manually using a `script` tag:
 ```
 
 For more complex projects, you'll probably want to concatenate your scripts or
-use a module loader. Bower is just a package manager, but there plenty of other
-tools -- such as [Sprockets](https://github.com/sstephenson/sprockets) and
-[RequireJS](http://requirejs.org/) -- that will help you do this.
+use a module loader. Bower is just a package manager, but there are plenty of
+other tools -- such as [Sprockets](https://github.com/sstephenson/sprockets)
+and [RequireJS](http://requirejs.org/) -- that will help you do this.
 
 ### Registering packages
 
@@ -169,18 +169,18 @@ Server](https://github.com/twitter/bower-server).
 
 ## Defining a package
 
-You must create a JSON file -- `component.json` by default -- in your project's
+You must create a JSON file -- `bower.json` by default -- in your project's
 root, and specify all of its dependencies. This is similar to Node's
 `package.json`, or Ruby's `Gemfile`, and is useful for locking down a project's
 dependencies.
 
-You can interactively create a `component.json` with the following command:
+You can interactively create a `bower.json` with the following command:
 
 ```
 bower init
 ```
 
-The `component.json` defines several options:
+The `bower.json` defines several options:
 
 * `name` (required): The name of your package.
 * `version`: A semantic version number (see [semver](http://semver.org/)).
@@ -288,9 +288,11 @@ option shown below:
 
 ![msysgit](http://f.cl.ly/items/2V2O3i1p3R2F1r2v0a12/mysgit.png)
 
-Note that if you use TortoiseGit and if bower keeps asking your ssh password, you should add the following environment variable:   
-`GIT_SSH - C:\Program Files\TortoiseGit\bin\TortoisePlink.exe`   
-Adjust the `TortoisePlink` path if needed.
+Note that if you use TortoiseGit and if Bower keeps asking for your SSH
+password, you should add the following environment variable: `GIT_SSH -
+C:\Program Files\TortoiseGit\bin\TortoisePlink.exe`. Adjust the `TortoisePlink`
+path if needed.
+
 
 ## Contact
 
@@ -322,6 +324,7 @@ Thanks for assistance and contributions:
 * [@marcelombc](https://github.com/marcelombc)
 * [@mklabs](https://github.com/mklabs)
 * [@paulirish](https://github.com/paulirish)
+* [@richo](https://github.com/richo)
 * [@rvagg](https://github.com/rvagg)
 * [@sindresorhus](https://github.com/sindresorhus)
 * [@SlexAxton](https://github.com/SlexAxton)
